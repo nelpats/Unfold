@@ -35,11 +35,11 @@ namespace Unfold
 
                     Console.WriteLine("Extracting section...");
                     var data = Decompress(reader.ToArray());
-                    File.WriteAllBytes($@"{Environment.CurrentDirectory}\Unfolded.exe", data);
 
                     Console.WriteLine("File has been extracted !");
+                    File.WriteAllBytes($@"{Environment.CurrentDirectory}\Unfolded.exe", data);
+                    
                     Console.ReadLine();
-
                     Environment.Exit(0);
                 }
             }
